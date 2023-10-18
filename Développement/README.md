@@ -25,3 +25,7 @@ Changer l'utilisateur:
 Vérifier:
 - git config --list
 Ok pour push avec le bon compte GIT
+
+Devoirs:
+styliser formulaire
+

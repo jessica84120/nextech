@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="fr" lang="fr">
+
+<head>
+	<title>Mise en forme de formulaire</title>
+    <link href="./formulaire.css" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="language" content="fr" />
+</head>
+
+<body>
+	<h1>Formulaire > &Eacute;tape 1</h1>
+		<p id="notes">
+		Nous utiliserons pour cet exemple un formulaire de souscription à une newsletter.</p>
+		<ul>
+			<li><a href="formulaire_2.html" >&Eacute;tape 2 &gt;</a></li>		
+		</ul>
+
+
+	<form id="inscription" method="get" action="#">
+		<h2>Newsletter</h2>
+			<p>
+				Nom : <input type="text" name="nom" id="nom" />
+			</p>
+			<p>
+				Prénom : <input type="text" name="prenom" id="prenom" />
+			</p>
+			<p>
+				Email : <input type="text" name="eMail" id="eMail" />
+			</p>
+			<p>
+				Pays :
+				<select id="pays">
+					<option value="france" selected="selected">France</option>
+					<option value="allemagne">Allemagne</option>
+					<option value="etatsunis">&Eacute;tats-Unis</option>
+					<option value="canada">Canada</option>
+					<option value="japon">Japon</option>
+					<option value="chine">Chine</option>
+				</select>
+			</p>
+			<p>
+				Date de naissance : <input type="text" name="dateNaissance" id="dateNaissance" />
+			</p>
+			<p>
+				<input type="radio" name="periode" id="periodeH" value="hebdo" checked="checked" /> Newsletter hebdomadaire<br />
+				<input type="radio" name="periode" id="periodeM" value="mens" /> Newsletter mensuelle<br />
+				<input type="radio" name="periode" id="periodeT" value="trim" /> Newsletter trimestrielle
+			</p>
+
+			<input type="reset" name="reset" id="reset" value="Annuler" />
+			<input type="submit" name="valid" id="valid" value="Valider" />
+	</form>	
+</body>
+</html>
