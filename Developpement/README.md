@@ -48,3 +48,21 @@ styliser formulaire
 
 <style>.btn-success{background-color:#99CC5B !important;}</style>
 
+PHP:
+
+>Pour cette erreur:
+System has not been booted with systemd as init system (PID 1). Can't operate.
+Failed to connect to bus: Host is down
+
+>Run:
+php -S localhost:8000
+
+>Redémarrer le serveur Apache:
+sudo service apache2 restart
+
+ex 1:
+ A <- 1 : La variable A est affectée avec la valeur 1.
+    B <- A + 3 = 4.
+    A <- 3 : La variable A est ensuite réaffectée avec la valeur 3, remplaçant la valeur précédente.
+    À la fin de l'exécution, A a la valeur 3, et B a la valeur 4   
+

@@ -1,0 +1,71 @@
+Procédure reductionCommande:
+
+Tableau Prix(N-1) en Numérique
+Vars N, TotalReduc, TotalSansReduc en Numérique
+
+Debut
+	TotalReduc <- 0
+	TotalSansReduc <- 0
+	// rentrer les données dans Prix(N-1)
+	Pour i 0 à N-1
+		Ecrire "Entrée un prix n°" & (i+1)
+		lire Prix(i)
+		i Suivant
+	
+	// on boucle de nouveau pour traiter les données du tableau
+	Pour i 0 à N-1
+		si Prix(i)>1000 alors
+			// on ajoute au total des produits qui vont donner lieu à une réduction de prix
+			TotalReduc <- TotalReduc + Prix(i)
+		Sinon
+		// on va ajouter le prix au TotalSansReduc
+		TotalSansReduc <- TotalSansReduc + Prix(i)
+		Finsi
+		
+	i Suivant
+	
+	Ecrire "le total avec Reduc vaut " & TotalReduc & " et le total sans réduc vaut " & TotalSansReduc
+	
+	Ecrire "le total après réduction est de " & (TotalReduc *0.9) + TotalSansReduc
+
+(Diapo 11 Exercices 06 à 13)	
+Introduction à l'algorithmique.
+Exercice 6:
+Procédure Temperature
+Var T en Numerique // Temperature de l'eau
+
+Debut
+//déclarer, affecter et initialiser
+t <- 0
+//méthode écrire 
+Ecrire donner la température de l'eau"
+Lire t
+//t <- TemperatureDeLeau
+
+Si t < 0
+Ecrire "l'état de l'eau est solide"
+Finsi
+
+Si 0 < t ET t < 100
+
+C:\xampp
+
+
+
+
+	//Demander à l'utilisateur de saisir la température de l'eau
+	Ecrire "Entrez la température de l'eau en degrès Celsius:"
+	Lire Temperature
+	
+	//Vérifier l'état de l'eau en fonction de la température 
+	Si Temperature <- 0 Alors
+		Ecrire "L'eau est à l'état solide."
+	Sinon Si Temperature>0 et Temperature <- 100 Alors
+		Ecrire "L'eau est à l'état liquide"
+	Sinon
+		Ecrire"L'eau est à l'état gazeux."
+	Fin Si
+Fin 
+
+
+
